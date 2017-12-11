@@ -8,6 +8,7 @@ You may assume that each input would have exactly one solution, and you may not 
  * @param {number} target
  * @return {number[]}
  */
+ //Solution 1
 var twoSum = function(nums, target) {
     var arrResult=[];
     var numLength=nums.lenght;
