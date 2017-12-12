@@ -23,3 +23,17 @@ var twoSum = function(nums, target) {
     }
     return arrResult;
 };
+//Solution2 99ms
+var twoSum2=function(nums,target){
+  var result=[];
+  var sumMap={};
+  for(var i=0;i<nums.length;i++){
+    var gap=target-nums[i];
+    if(sumMap[gap]&&i!=sumMap[gap]){
+      result.push(sumMap[gap],i);
+    }else{
+      sumMap[nums[i]]=i;
+    }
+  }
+  return result;
+}
